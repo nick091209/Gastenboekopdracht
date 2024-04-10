@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Nick Colijn</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Over Mij</a></li>
+        <li><a href="#experience">Ervaring</a></li>
+        <li><a href="#projects">Projecten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Nick Colijn</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Over Mij</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Ervaring</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projecten</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="homepic" src="assets/file.png" alt="" />
+    </div>
+    <div class="section__text">
+      <h1 class="title">Nick Colijn</h1>
+      <p class="section__text__p2">Student Softwaredeveloper</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('cv.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/nick-colijn-222a0825b/">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/nick091209">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Kom meer te weten</p>
+    <h1 class="title">Over mij</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="assets/fotoovermij.jpg" alt="profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Doelen</h3>
+            <p>Frontend verbeteren<br> Backend leren</p>
+          </div>
+          <div class="details-container">
+            <img src="assets/education.png" alt="Education icon" class="icon" />
+            <h3>Opleiding</h3>
+            <p>Softwaredeveloper <br> ROC Amersfoort</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Mijn naam is Nick, ik ben 17 jaar en woon in Huizen. sinds dit jaar ben ik een
+            student bij het ROC Amersfoort en ik volg de opleiding Software Developer.
+            Ik ben al van jongs af aan geïnteresseerd in computers en technologie.
+            Ik heb altijd al willen weten hoe computers werken en hoe je ze kan programmeren.
+            Daarom heb ik gekozen voor de opleiding Software Developer.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Bekijk mijn</p>
+    <h1 class="title">Ervaringen</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3 class="test">HTML</h3>
+                <p>Basis</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3 class="test">CSS</h3>
+                <p>Basis</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Talen</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3 class="6.416">Nederlands</h3>
+                <p>Vloeiend</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3 class="102.66">Engels</h3>
+                <p>Bijna vloeiend</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Dit zijn mijn</p>
+    <h1 class="title">Projecten</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/gastenboek.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">gastenboek</h2>
+          <div class="btn-container">
+            <a href="gastenboekgit/index.php">
+              <button class="btn btn-color-2 project-btn">
+                Bekijk
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/logo-gamecraft.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">GameCraft</h2>
+          <div class="btn-container">
+            <a href="#">
+              <button class="btn btn-color-2 project-btn">
+                Bekijk
+              </button>
+            </a>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/logo_aliensmash.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Alien Smash</h2>
+          <div class="btn-container">
+            <a href="game/index.html">
+              <button class="btn btn-color-2 project-btn">
+                Bekijk
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:Nickcolijn2006@gmail.com">Nickcolijn2006@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/nick-colijn-222a0825b/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Over Mij</a></li>
+          <li><a href="#experience">Ervaring</a></li>
+          <li><a href="#projects">Projecten</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
